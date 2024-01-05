@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do List Application</title>
+    <!-- styling -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <header>
@@ -13,14 +19,10 @@
     </header>
     <main style="padding: 10px">
       <div id="todo-container">
-        <div style="text-align: center" class="input-group">
-          <input
-            type="text"
-            name=""
-            id="task-input"
-            placeholder="Enter your Task"
-          />
-          <button>+</button>
+        <div class="input-group" style="justify-content: center">
+          <input type="text" id="task-input" placeholder="Enter your Task..." />
+
+          <button id="add-button">+</button>
         </div>
         <div class="todo-storage">
           <ul>
@@ -29,15 +31,18 @@
           </ul>
         </div>
         <div class="task-container">
-          <ul id="task-list">
-            <li>hhahaer3weepp</li>
-            <li>asede</li>
-            <li>asede</li>
-            <li>adesd</li>
-            <li>ades</li>
-          </ul>
+          <ul id="task-list"></ul>
         </div>
       </div>
     </main>
+    <footer style="text-align: center">
+      <p>
+        Made with love by
+        <a href="https://twitter.com/IbrahimBakare_" target="_blank"
+          >Ibrahim Bakare</a
+        >
+      </p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

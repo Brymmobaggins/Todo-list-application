@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do List Application</title>
-    <!-- styling -->
-    <link rel="stylesheet" href="style.css" />
     <!-- Google icons -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <!-- styling -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -22,13 +22,15 @@
         <div class="input-group" style="justify-content: center">
           <input type="text" id="task-input" placeholder="Enter your Task..." />
 
-          <button id="add-button">+</button>
+          <button id="add-button" class="">+</button>
         </div>
         <div class="todo-storage">
-          <ul>
-            <li><a href="">Tasks</a></li>
-            <li><a href="">History</a></li>
-          </ul>
+          <div class="">
+            <h5>Task</h5>
+          </div>
+          <div class="">
+            <h5>History</h5>
+          </div>
         </div>
         <div class="task-container">
           <ul id="task-list"></ul>

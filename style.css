@@ -20,6 +20,8 @@ a {
   text-decoration: none;
 }
 body {
+  font-weight: 300;
+  /* font-size: 1.5rem; */
 }
 header {
   background-color: var(--bg-color-3);
@@ -27,14 +29,18 @@ header {
   padding: 0.5rem 1.5rem;
   font-weight: 500;
 }
-.todo-storage {
+.todo-storage ul {
   display: flex;
-  /* border: 1px solid red; */
   margin-top: 1rem;
+  /* font-size: 1.2rem; */
 }
+
 /* .todo-storage */
-.todo-storage div:first-child {
+.todo-storage ul li:first-child {
   margin-right: 1rem;
+}
+.active-list {
+  text-decoration: underline solid green 10%;
 }
 
 #todo-container {
@@ -44,22 +50,27 @@ header {
   max-width: 100%;
   width: 400px;
 }
-.input-group {
-  border: 0.5px solid hsl(150, 4%, 11%);
-  padding: 0.313rem;
+.new {
+  /* padding: 0.313rem; */
+  color: inherit;
+  border-bottom: 1px solid currentColor;
   margin-top: 0.625rem;
-  border-radius: 20px;
-  height: auto;
-  font-size: 18px;
+  background-color: transparent;
+  outline: 0;
 }
+
 input {
-  display: inline-block;
-  font-family: inherit;
   width: 80%;
   height: 35px;
-  padding: 0.79rem;
-  outline: 0;
   border: 0;
+  font-size: inherit;
+  transition: border-bottom 150ms ease-in;
+}
+.new:focus {
+  border-bottom-width: 2.5px;
+}
+.new:focus::placeholder{
+  opacity: 0.3;
 }
 btn {
   border: none;
@@ -92,7 +103,7 @@ button:hover {
   /* background-color: var(--bg-color-1); */
   padding: 0.625rem;
 }
-li {
+#task-list li {
   margin-top: 0.1rem;
   /* padding: 0 35rem; */
   border: 1px solid green;
@@ -114,10 +125,13 @@ footer a {
 }
 
 /* medium screen from tablets and above */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   header {
     text-align: left;
   }
   #todo-container {
+  }
+  footera {
+    font-size: small;
   }
 }

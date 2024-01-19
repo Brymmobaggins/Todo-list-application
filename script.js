@@ -1,7 +1,14 @@
 
 const addButton = document.getElementById('add-button')
+const form = document.querySelector('form')
 
-addButton.addEventListener('click', addTask);
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault()
+    addTask()
+})
+
+
 function addTask() {
     const taskInput = document.getElementById('task-input')
     const taskList = document.getElementById("task-list")

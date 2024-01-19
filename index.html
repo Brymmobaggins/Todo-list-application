@@ -4,11 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do List Application</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
     <!-- Google icons -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+
     <!-- styling -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -19,18 +38,21 @@
     </header>
     <main style="padding: 10px">
       <div id="todo-container">
-        <div class="input-group" style="justify-content: center">
-          <input type="text" id="task-input" placeholder="Enter your Task..." />
+        <form style="justify-content: center">
+          <input
+            type="text"
+            class="new"
+            id="task-input"
+            placeholder="Enter your Task..."
+          />
 
-          <button id="add-button" class="">+</button>
-        </div>
+          <button onclick="" id="add-button" class="btn">+</button>
+        </form>
         <div class="todo-storage">
-          <div class="">
-            <h5>Task</h5>
-          </div>
-          <div class="">
-            <h5>History</h5>
-          </div>
+          <ul id="">
+            <li class="active-list">Task</li>
+            <li>History</li>
+          </ul>
         </div>
         <div class="task-container">
           <ul id="task-list"></ul>

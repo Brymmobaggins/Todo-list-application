@@ -2,7 +2,7 @@
 
 :root {
   --ft-clr: #000;
-  --bg-color-1: #e4e0e0;
+  --bg-color-1: #e7e5e5;
   --bg-color-2: #f0ffff;
   --bg-color-3: #f1f9e7;
 }
@@ -87,15 +87,20 @@ btn {
   padding: 0;
   margin: 0;
   font-weight: 900;
-  transition: opacity 2ms ease-in;
+  transition: opacity 5ms ease-in;
 }
 .btn:hover {
   opacity: 0.7;
   cursor: pointer;
 }
+button {
+  border: 0;
+  cursor: ;
+}
 .task-container {
   height: 400px;
   /* background-color: var(--bg-color-1); */
+  /* border:1px solid #7b6067; */
 }
 .task-container > li:not(:first-child) {
   margin-top: 1rem;
@@ -106,19 +111,17 @@ btn {
 }
 #task-list li {
   margin-top: 0.1rem;
-  /* padding: 0 35rem; */
-  border: 1px solid green;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: var(--bg-color-1);
   padding: 0.5rem 0.75rem;
   display: flex;
-  /* font-size: 20px; */
   justify-content: space-between;
   align-items: center;
 }
-.showBg {
+
+/* .showBg {
   background-color: var(--bg-color-1);
-}
+} */
 footer a {
   color: #000;
   font-size: 15px;

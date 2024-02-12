@@ -95,7 +95,8 @@ btn {
 }
 button {
   border: 0;
-  cursor: ;
+  cursor: pointer;
+  opacity: 0.7;
 }
 .task-container {
   height: 400px;
@@ -126,6 +127,9 @@ footer a {
   color: #000;
   font-size: 15px;
   color: #6464f6;
+}
+.completed {
+  text-decoration: line-through;
 }
 
 /* medium screen from tablets and above */
